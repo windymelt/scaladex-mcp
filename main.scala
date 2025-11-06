@@ -1,5 +1,5 @@
 //> using scala 3.7.0
-//> using dep com.indoorvivants::mcp-quick::latest.release
+//> using dep com.indoorvivants::mcp-quick::0.1.3
 //> using dep com.softwaremill.sttp.client4::core::4.0.13
 
 import mcp.*
@@ -19,7 +19,9 @@ import mcp.*
         Seq(
           Tool(
             name = "search_scala_library",
-            description = Some("Search for Scala libraries"),
+            description = Some(
+              "Search for Scala libraries. If you provide a repository name, it will return matching libraries from Scaladex. You can retrieve information such as latest versions, all versions, repository details, and homepage URL.",
+            ),
             inputSchema = Tool.InputSchema(
               Some(
                 ujson.Obj(
