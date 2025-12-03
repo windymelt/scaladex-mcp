@@ -10,7 +10,7 @@ Provides Scaladex information on MCP.
 ### Codex
 
 ```sh
-codex mcp add scaladex scala-cli PATH_TO_MAIN_SCALA
+codex mcp add scaladex cs launch dev.capslock::scaladex-mcp:0.0.1
 ```
 
 ### Cline / Roo Code
@@ -19,8 +19,8 @@ codex mcp add scaladex scala-cli PATH_TO_MAIN_SCALA
 {
   "mcpServers": {
     "scaladex": {
-      "command": "scala-cli",
-      "args": ["PATH_TO_MAIN_SCALA"]
+      "command": "cs",
+      "args": ["launch", "dev.capslock::scaladex-mcp:0.0.1"]
     }
   }
 }
@@ -29,5 +29,5 @@ codex mcp add scaladex scala-cli PATH_TO_MAIN_SCALA
 ## Development
 
 ```sh
-npx @modelcontextprotocol/inspector scala-cli run main.scala
+npx @modelcontextprotocol/inspector sbt run
 ```
