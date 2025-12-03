@@ -25,5 +25,6 @@ inThisBuild(
         url("https://www.3qe.us"),
       ),
     ),
+    versionScheme := Some("early-semver"),
   ),
 )
